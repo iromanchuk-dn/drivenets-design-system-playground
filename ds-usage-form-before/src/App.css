@@ -1,0 +1,361 @@
+.api-call-panel {
+  display: flex;
+  flex-direction: column;
+  width: 493px;
+  height: 100vh;
+  background: #fdfeff;
+  border: 1px solid #d8d8db;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-border, #c7c9cc);
+  background: var(--background-background-action-secondary, white);
+}
+
+.panel-title-bar {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-border, #c7c9cc);
+  height: 42px;
+}
+
+.panel-title-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.panel-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #ff9800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.panel-icon svg {
+  font-size: 20px;
+}
+
+.panel-title-right {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.version-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 24px;
+  padding: 0 4px;
+  border-radius: 4px;
+  background: var(--background-background-secondary, #f3f5fa);
+  font-size: 12px;
+  color: var(--font-font-main, #26303b);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  height: 24px;
+  background: var(--background-background-secondary, #f3f5fa);
+  color: var(--font-font-action-secondary, #001a47);
+  font-size: 12px;
+}
+
+.breadcrumb-bar .ds-icon {
+  font-size: 16px;
+}
+
+/* ── Content area ── */
+
+.panel-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+/* ── Configuration section ── */
+
+.config-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px;
+}
+
+/* ── Collapsible sections ── */
+
+.collapsible-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--background-background-secondary, #f3f5fa);
+  border: 1px solid var(--border-border, #c7c9cc);
+}
+
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.collapsible-header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0;
+}
+
+.collapsible-arrow {
+  transition: transform 0.2s ease;
+  color: var(--font-font-main, #26303b);
+}
+
+.collapsible-arrow.collapsed {
+  transform: rotate(-90deg);
+}
+
+.section-title-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-font-main, #26303b);
+}
+
+.config-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+}
+
+.config-title-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+  color: var(--font-font-main, #26303b);
+}
+
+/* ── Key-value card ── */
+
+.kv-card {
+  background: white;
+  border: 1px solid var(--border-border, #c7c9cc);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.kv-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kv-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.kv-row .kv-name-input,
+.kv-row .kv-type-select {
+  flex: 1;
+}
+
+.kv-delete-btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--font-font-secondary, #4c5f76);
+  display: flex;
+  align-items: center;
+}
+
+.kv-delete-btn:hover {
+  color: var(--font-font-main, #26303b);
+}
+
+/* ── Expression input ── */
+
+.expression-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.expression-input {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 4px 10px 8px;
+  background: var(--background-background-secondary, #f3f5fa);
+  border: 1px solid var(--border-border-secondary, #e5e8ed);
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.expression-tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+  align-items: center;
+}
+
+.expression-code {
+  font-family: var(--font-family-code, "Fira Mono", monospace);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-font-success, #07654c);
+  max-width: 300px;
+  white-space: nowrap;
+}
+
+.expression-extra {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-font-action-secondary, #001a47);
+}
+
+.expression-open-btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--font-font-secondary, #4c5f76);
+  display: flex;
+  align-items: center;
+}
+
+.result-row {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: var(--background-background-secondary, #f3f5fa);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-font-secondary, #4c5f76);
+}
+
+.result-value {
+  color: #028764;
+}
+
+/* ── Add button ── */
+
+.add-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--background-background-selected, #004cff);
+  background: var(--background-background-action-secondary, white);
+  color: var(--background-background-selected, #004cff);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.add-button:hover {
+  background: #f0f4ff;
+}
+
+/* ── Radio row ── */
+
+.body-type-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* ── Preview ── */
+
+.preview-code {
+  background: var(--background-background, white);
+  border-radius: 4px;
+  padding: 10px 4px 10px 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.preview-code pre {
+  flex: 1;
+  font-family: var(--font-family-code, "Fira Mono", monospace);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--font-font-success, #07654c);
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 0;
+}
+
+.preview-open-btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--font-font-secondary, #4c5f76);
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ── Toggle row ── */
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+/* ── Collapsible content ── */
+
+.collapsible-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.collapsible-body.hidden {
+  display: none;
+}
+
+/* ── Sections wrapper ── */
+
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 24px;
+}
+
+/* ── Checkbox row in body ── */
+
+.required-checkbox-row {
+  display: flex;
+  align-items: flex-start;
+}
