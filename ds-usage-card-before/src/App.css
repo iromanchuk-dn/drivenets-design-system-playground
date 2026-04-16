@@ -1,0 +1,372 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-background-secondary);
+}
+
+/* ─── Header ─── */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  height: 54px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(1, 75, 253, 1) 0%,
+    rgba(10, 60, 194, 1) 78%,
+    rgba(16, 51, 160, 1) 89%,
+    rgba(21, 42, 126, 1) 100%
+  );
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header-title {
+  color: var(--color-font-on-action);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 12px;
+}
+
+.header-draft-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  height: 24px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  background: var(--color-icon-information-main);
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header-draft-badge .ds-icon {
+  font-size: 14px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-btn-icon {
+  width: 28px;
+  min-width: 28px !important;
+  padding: 0 !important;
+}
+
+/* ─── Content ─── */
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 40px;
+  background: var(--color-background);
+  overflow-x: auto;
+}
+
+.content-header {
+  padding-bottom: 24px;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ─── Sections ─── */
+
+.section {
+  border-bottom: 1px solid var(--color-border-secondary);
+  padding-bottom: 32px;
+  padding-top: 24px;
+}
+
+.section:first-child {
+  padding-top: 0;
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  margin-bottom: 24px;
+}
+
+/* ─── Rollout Details ─── */
+
+.details-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 32px;
+  white-space: nowrap;
+}
+
+.detail-field:not(:first-child) {
+  padding-left: 16px;
+}
+
+.detail-field-label {
+  padding-bottom: 2px;
+}
+
+.detail-field-value {
+  padding: 10px 0;
+}
+
+.templates-field {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 32px;
+  white-space: nowrap;
+}
+
+.templates-label {
+  padding-bottom: 2px;
+}
+
+.templates-tags {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+/* ─── Stage Configuration ─── */
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.stage-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stage-cards {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.stage-card {
+  width: 300px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 8px;
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.stage-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: var(--color-background-secondary);
+  opacity: 0.8;
+  border-radius: 8px 8px 0 0;
+}
+
+.stage-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+}
+
+.stage-card-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stage-divider {
+  width: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stage-divider-line {
+  width: 1px;
+  height: 170px;
+  background: var(--color-border-secondary);
+}
+
+.duration-card {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 8px;
+  background: var(--color-background);
+  overflow: hidden;
+}
+
+.duration-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background: var(--color-background-secondary);
+  opacity: 0.8;
+  border-radius: 8px 8px 0 0;
+}
+
+.duration-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+}
+
+.duration-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ─── Review & Approval ─── */
+
+.approval-section {
+  padding-top: 0;
+  border-bottom: none;
+}
+
+.approver-field {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.approver-label {
+  padding-bottom: 2px;
+}
+
+.approver-description {
+  padding-bottom: 2px;
+}
+
+/* ─── Wizard Footer ─── */
+
+.wizard-footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  height: 72px;
+  box-sizing: border-box;
+  background: white;
+  border-top: 1px solid var(--color-border);
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  flex-shrink: 0;
+}
+
+.wizard-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 8px;
+  width: 256px;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.wizard-step--active {
+  background: var(--color-background-action-secondary-hover);
+}
+
+.wizard-step-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.wizard-step-circle--completed {
+  border: 2px solid var(--color-background-selected);
+  background: transparent;
+  color: var(--color-background-selected);
+}
+
+.wizard-step-circle--active {
+  border: 3px solid white;
+  background: var(--color-background-selected);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.wizard-step-circle--pending {
+  border: 2px solid var(--color-border);
+  background: transparent;
+  color: var(--color-font-main);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.wizard-step-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  height: 48px;
+}
+
+.wizard-step-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.wizard-step-line {
+  flex: 1;
+  height: 2px;
+  min-width: 0;
+  background: var(--color-border-contrast);
+}
+
+.wizard-spacer {
+  flex: 1;
+}
