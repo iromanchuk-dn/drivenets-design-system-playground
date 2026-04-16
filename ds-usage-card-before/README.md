@@ -1,3 +1,7 @@
+### Preview
+
+![Preview](screenshots/preview.png)
+
 ### Prompt
 
 Implement this design from Figma.
