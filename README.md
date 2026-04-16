@@ -29,10 +29,10 @@ Each experiment lives in its own directory (separate Vite project) to prevent th
 
 | # | Design | Figma Link | Baseline | After Improvements |
 |---|--------|------------|----------|--------------------|
-| 1 | Complex Form | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=17013-242326&m=dev) | `ds-usage-form-before/` | `ds-usage-form-after/` |
-| 2 | Page with Table | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-312777&m=dev) | `ds-usage-table-before/` | `ds-usage-table-after/` |
-| 3 | Complex Modal | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-312423&m=dev) | `ds-usage-modal-before/` | `ds-usage-modal-after/` |
-| 4 | Page with Cards | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-311964&m=dev) | `ds-usage-card-before/` | `ds-usage-card-after/` |
+| 1 | Complex Form | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=17013-242326&m=dev) | [ds-usage-form-before](ds-usage-form-before/README.md) | [ds-usage-form-after](ds-usage-form-after/README.md) |
+| 2 | Page with Table | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-312777&m=dev) | [ds-usage-table-before](ds-usage-table-before/README.md) | [ds-usage-table-after](ds-usage-table-after/README.md) |
+| 3 | Complex Modal | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-312423&m=dev) | [ds-usage-modal-before](ds-usage-modal-before/README.md) | [ds-usage-modal-after](ds-usage-modal-after/README.md) |
+| 4 | Page with Cards | [Figma](https://www.figma.com/design/6PzD1I7Xf9UaFkJArGyVAF/DAP-25?node-id=23625-311964&m=dev) | [ds-usage-card-before](ds-usage-card-before/README.md) | [ds-usage-card-after](ds-usage-card-after/README.md) |
 
 Each experiment directory contains its own `README.md` with a screenshot, the exact prompt used, and a detailed analysis of problems found. Comparing `*-before/` and `*-after/` for the same design shows the impact of AI toolkit improvements.
 
@@ -53,19 +53,4 @@ Generated code is evaluated against these success criteria:
 ```
 ds-usage-{design}-before/   → baseline result (no AI improvements)
 ds-usage-{design}-after/    → result after AI toolkit improvements
-```
-
-## Project Structure
-
-```
-├── ds-usage-template/       # Base Vite + React + TS template with DS installed
-├── ds-usage-form-before/    # Experiment 1 — baseline
-├── ds-usage-form-after/     # Experiment 1 — after improvements
-├── ds-usage-table-before/   # Experiment 2 — baseline
-├── ds-usage-table-after/    # Experiment 2 — after improvements
-├── ds-usage-modal-before/   # Experiment 3 — baseline
-├── ds-usage-modal-after/    # Experiment 3 — after improvements
-├── ds-usage-card-before/    # Experiment 4 — baseline
-├── ds-usage-card-after/     # Experiment 4 — after improvements
-└── README.md                # This file
 ```
