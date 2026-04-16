@@ -17,3 +17,4 @@ Implement this design from Figma.
 - DsStepper was used without the ability to change active step
 - Wrong icon was used: <DsIcon icon="refresh" /> instead of <DsIcon icon="more_vert" />
 - AI installed "@tanstack/react-table", but it should not have done it.
+- Didn't use <StatusBadge> component
