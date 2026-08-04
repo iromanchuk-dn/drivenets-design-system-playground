@@ -1,0 +1,228 @@
+.api-call-panel {
+  display: flex;
+  flex-direction: column;
+  width: 493px;
+  height: 100vh;
+  background: var(--background-action-secondary, white);
+}
+
+/* ── Header ── */
+
+.panel-header {
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--border-border, #c7c9cc);
+}
+
+.panel-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sm, 12px);
+  height: 42px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--border-border, #c7c9cc);
+}
+
+.api-call-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: var(--schema-amber, #ff9800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.panel-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--xs, 8px);
+  padding: 0 var(--sm, 12px);
+  height: 24px;
+  background: var(--background-secondary, #f3f5fa);
+}
+
+.panel-tabs {
+  padding-top: var(--xs, 8px);
+}
+
+/* ── Content ── */
+
+.panel-content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--md, 20px);
+  padding-bottom: var(--lg, 24px);
+}
+
+/* ── Section headers ── */
+
+.section-header-btn {
+  display: flex;
+  align-items: center;
+  gap: var(--xs, 8px);
+  padding: 0 var(--lg, 24px);
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.section-fields {
+  padding: 0 var(--lg, 24px);
+}
+
+/* ── Collapsible cards ── */
+
+.collapsible-card {
+  margin: 0 var(--lg, 24px);
+  padding: var(--standard, 16px);
+  border-radius: 8px;
+  border: 1px solid var(--border-border, #c7c9cc);
+  background: var(--background-secondary, #f3f5fa);
+  display: flex;
+  flex-direction: column;
+  gap: var(--standard, 16px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card-header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.card-inner {
+  background: var(--background-background, white);
+  border: 1px solid var(--border-border, #c7c9cc);
+  border-radius: var(--3xs, 4px);
+  padding: var(--standard, 16px);
+}
+
+/* ── Key-value entry ── */
+
+.kv-row {
+  display: flex;
+  align-items: center;
+  gap: var(--standard, 16px);
+  width: 100%;
+}
+
+.kv-key {
+  flex: 1;
+  min-width: 0;
+}
+
+.kv-delete {
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--icon-secondary, #4c5f76);
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Expression input ── */
+
+.expression-input {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--xs, 8px);
+  padding: 10px var(--xs, 8px) 10px var(--xs, 8px);
+  border-radius: 4px;
+  background: var(--background-secondary, #f3f5fa);
+  border: 1px solid var(--border-secondary, #e5e8ed);
+  min-height: 36px;
+  box-sizing: border-box;
+}
+
+.expression-input--no-border {
+  border: none;
+  background: var(--background-background, white);
+}
+
+.expression-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--xs, 8px);
+  align-items: flex-start;
+}
+
+.expression-icon {
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ── Result preview ── */
+
+.result-preview {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: var(--background-secondary, #f3f5fa);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Add button ── */
+
+.add-btn {
+  align-self: flex-start;
+}
+
+/* ── Preview code ── */
+
+.preview-code {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--xs, 8px);
+  padding: 10px var(--xs, 8px);
+  border-radius: 4px;
+  background: var(--background-background, white);
+}
+
+.preview-code pre {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* ── Radio group row ── */
+
+.body-type-radios {
+  display: flex;
+  flex-direction: row;
+  gap: var(--standard, 16px);
+}
+
+/* ── Arrow rotation ── */
+
+.arrow-icon {
+  transition: transform 150ms ease;
+}
+
+.arrow-icon--collapsed {
+  transform: rotate(-90deg);
+}
