@@ -17,3 +17,4 @@ Implement this design from Figma.
 - native <button> is used for all buttons instead of DsButton
 - DsTypography is not used at all
 - wrong size in px is passed into <DsIcon>, `size: "small" | "tiny" | "medium" | "large" | "extra-large"`
+- deprecated css variables are used; multiple hardcoded colors
