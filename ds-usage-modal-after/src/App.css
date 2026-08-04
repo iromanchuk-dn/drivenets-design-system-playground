@@ -1,0 +1,92 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Timeline Card */
+.timeline-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-secondary);
+  border-radius: 8px;
+  background: var(--background);
+  margin: 16px 0;
+}
+
+.timeline-stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 12px 16px;
+  border-right: 1px solid var(--border-secondary);
+  flex-shrink: 0;
+}
+
+.timeline-stats-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-legend {
+  display: flex;
+  gap: 32px;
+  padding: 0 24px;
+  font-size: var(--body-font-size-sm, 14px);
+}
+
+.timeline-legend-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeline-legend-group:first-child {
+  padding-right: 32px;
+  border-right: 1px solid var(--border-secondary);
+}
+
+.timeline-legend-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  min-width: 100px;
+}
+
+/* Stats & Actions */
+.stats-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 24px 12px;
+}
+
+.stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-arrow {
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
