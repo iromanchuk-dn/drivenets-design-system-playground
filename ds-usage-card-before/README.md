@@ -13,6 +13,7 @@ Implement this design from Figma.
 
 #### Problems
 
+- Didn't use <DsWorkspaceLayout> component
 - Didn't use <DsStepper> component
 - <DsButton> is used with "tiny" size instead of "small"
 - Didn't use <StatusBadge> component
